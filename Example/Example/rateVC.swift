@@ -30,22 +30,24 @@ class rateVC: UIViewController {
     
     func insertData() {
         
-        rate?.addIt("name",
-            dscr: "dscr",
-            url: "https://raw.githubusercontent.com/nativejong/mGallery/main/images/japangirl.jpg",
-            urld: nil )
-        
-        rate?.addIt("name",
-            dscr: "dscr",
-            url: "https://raw.githubusercontent.com/nativejong/mGallery/main/images/japangirl.jpg",
-            urld: nil )
+        for _ in 0..<5{
+            rate?.addIt("Cherry Blossom",
+                dscr: "Kyoto",
+                url: "https://raw.githubusercontent.com/nativejong/mGallery/main/images/cherry_blossom.jpg",
+                urld: nil )
+            
+            rate?.addIt("Japan",
+                dscr: "Osaka",
+                url: "https://raw.githubusercontent.com/nativejong/mGallery/main/images/japan.png",
+                urld: nil )
+            
+            rate?.addIt("Castle",
+                dscr: "Tokyo",
+                url: "https://raw.githubusercontent.com/nativejong/mGallery/main/images/japan2.png",
+                urld: nil )
+        }
 
         rate?.refresh()
-        
-//        rate?.addDscr("Hello")
-//        rate?.addLogo("https://raw.githubusercontent.com/nativejong/mGallery/main/images/japangirl.jpg", date: nil)
-//        rate?.addPhoto("https://raw.githubusercontent.com/nativejong/mGallery/main/images/japan.png", date: nil)
-//        rate?.refresh()
     }
     
     override func viewWillLayoutSubviews() {
