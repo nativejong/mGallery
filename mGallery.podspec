@@ -12,22 +12,22 @@
 #https://cocoapods.org/pods/Native-Jong-BPod
 
 Pod::Spec.new do |s|
-    s.name             = "mHome"
+    s.name             = "mGallery"
     s.version          = "1.1.1"
     s.summary          = "Native Jon"
     s.homepage         = "https://github.com/artsy/Artsy-OSSUIFonts"
     s.license          = 'Code is MIT, then custom font licenses.'
     s.author           = { "Native Jon" => "native.jong@gmail.com" }
-    s.source           = { :git => "https://github.com/nativejong/mHome.git", :tag => s.version }
+    s.source           = { :git => "https://github.com/nativejong/mGallery.git", :tag => s.version }
     s.social_media_url = 'https://twitter.com/artsy'
 
     s.platform     = :ios, '7.0'
     s.requires_arc = true
     
-    s.public_header_files = "mHome.framework/Headers/*.h"
-    s.source_files = "mHome.framework/Headers/*.h"
-    s.vendored_frameworks = "mHome.framework"
+    s.public_header_files = "mGallery.framework/Headers/*.h"
+    s.source_files = "mGallery.framework/Headers/*.h"
+    s.vendored_frameworks = "mGallery.framework"
 
     s.frameworks = 'UIKit', 'CoreText'
-    s.module_name = 'mHome'
+    s.module_name = 'mGallery'
 end

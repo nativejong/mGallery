@@ -1,0 +1,6 @@
+framework module mGallery {
+  umbrella header "mGallery.h"
+
+  export *
+  module * { export * }
+}
