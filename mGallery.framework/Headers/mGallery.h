@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <mGalleryImg.h>
+#import <mGallery/mGalleryImg.h>
 
 FOUNDATION_EXPORT double mGalleryVersionNumber;
 FOUNDATION_EXPORT const unsigned char mGalleryVersionString[];

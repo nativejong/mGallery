@@ -9,7 +9,6 @@
 import UIKit
 import mGallery
 
-
 class rateVC: UIViewController {
     var rate : mGallery?
 
@@ -29,10 +28,23 @@ class rateVC: UIViewController {
     }
     
     func insertData() {
-        rate?.addDscr("Hello")
-        rate?.addLogo("https://raw.githubusercontent.com/nativejong/mGallery/main/images/japangirl.jpg", date: nil)
-        rate?.addPhoto("https://raw.githubusercontent.com/nativejong/mGallery/main/images/japan.png", date: nil)
+        
+        rate?.addIt("name",
+            dscr: "dscr",
+            url: "https://raw.githubusercontent.com/nativejong/mGallery/main/images/japangirl.jpg",
+            urld: nil )
+        
+        rate?.addIt("name",
+            dscr: "dscr",
+            url: "https://raw.githubusercontent.com/nativejong/mGallery/main/images/japangirl.jpg",
+            urld: nil )
+
         rate?.refresh()
+        
+//        rate?.addDscr("Hello")
+//        rate?.addLogo("https://raw.githubusercontent.com/nativejong/mGallery/main/images/japangirl.jpg", date: nil)
+//        rate?.addPhoto("https://raw.githubusercontent.com/nativejong/mGallery/main/images/japan.png", date: nil)
+//        rate?.refresh()
     }
     
     override func viewWillLayoutSubviews() {

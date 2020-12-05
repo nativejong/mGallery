@@ -5,8 +5,8 @@ target 'Example' do
   platform :ios, '13.0'
   use_frameworks!
   
-    pod 'mGallery', :git => 'https://github.com/nativejong/mGallery.git'
-#    pod 'mGallery', :path => '/Users/jblaine/Native-Jong/mGallery/mGallery.podspec'
+#    pod 'mGallery', :git => 'https://github.com/nativejong/mGallery.git'
+    pod 'mGallery', :path => '/Users/jblaine/Native-Jong/mGallery/mGallery.podspec'
     
     post_install do |installer|
         installer.pods_project.targets.each do |target|
