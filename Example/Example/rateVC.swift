@@ -16,7 +16,8 @@ class rateVC: UIViewController {
         super.viewDidLoad()
         self.edgesForExtendedLayout = []
         
-        rate = mGallery(frame: CGRect.zero)
+        rate = mGallery(frame: CGRect.zero, bg: UIColor.red)
+
         self.view.addSubview(rate!)
         self.view.backgroundColor = UIColor.red
     }

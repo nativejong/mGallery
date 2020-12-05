@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <mGallery/mGalleryImg.h>
+#import "mGalleryImg.h"
 
 FOUNDATION_EXPORT double mGalleryVersionNumber;
 FOUNDATION_EXPORT const unsigned char mGalleryVersionString[];
@@ -20,7 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, retain) UICollectionView *tbl;
 @property (nonatomic, strong) NSMutableArray *myData;
-@property (nonatomic, strong) UIColor *bgColor;
 @property (nonatomic, strong) mGalleryImg *galleryImg;
 
 - (id)initWithFrame:(CGRect)frame bg:(UIColor*)c;
